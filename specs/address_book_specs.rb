@@ -14,6 +14,14 @@ RSpec.describe AddressBook do
             book = AddressBook.new
             expect(book.entries.size).eql? 0
         end
+<<<<<<< HEAD
+=======
+        
+        it "should respond to remove_entry" do
+            book = AddressBook.new
+            expect(book).to respond_to(:remove_entry)
+        end
+>>>>>>> assignment-21-models
     end
     
     context ".add_entry" do
@@ -34,5 +42,9 @@ RSpec.describe AddressBook do
             expect(new_entry.email).eql? 'augusta.king@lovelace.com'
         end
     end
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> assignment-21-models
 end

@@ -196,4 +196,17 @@ class MenuController
       search_submenu(entry)
     end
   end
+
+  def delete_entry(entry)
+     @address_book.entries.delete(entry)
+     puts "#{entry.name} has been deleted"
+   end
+  
+   def detonate
+    while @address_book.entries.count > 0
+      @address_book.entries.each do |entry|
+      delete_entry(entry)
+      end
+    end
+  end
 end

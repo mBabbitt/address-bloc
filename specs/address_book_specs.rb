@@ -97,11 +97,11 @@ end
   it "checks the details of the third entry" do
     book.import_from_csv("entries_2.csv")
     entry_three = book.entries[2]
-    check_entry(entry_three, "Ana", "555-555-5555", "ana@gmail.com")
+    check_entry(entry_three, "Ana", "555-555-5555", "ana@gmail.com")git commit 
   end
 end
 end
-end
+
 
 
 
